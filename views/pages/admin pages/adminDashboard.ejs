@@ -1,0 +1,16 @@
+<!-- <link rel="stylesheet" href="/css/adminDashboard.css">not use ./ otherwise current url aage appent this url not as MW provide , internally template engine do req for css file and static MW get called () , TE execute/compile ejs -->
+
+<main id="main">
+
+  <section id="employee">
+    <%- include("../../partials/admin/_listOfEmployees.ejs",{employees}) -%> 
+    <div id="add-employee-modal-btn-container">
+      <%- include("../../partials/admin/_addEmployeeModal.ejs",{}) -%> 
+    </div>
+  </section>
+    
+</main>
+
+
+    
+    

@@ -1,0 +1,14 @@
+<!-- <link rel="stylesheet" href="/css/feedback.css"> -->
+
+<main id="main">
+
+    <section id="list-of-feedbacks">
+        <%- include('../../partials/admin/_listOfFeedbacks.ejs',{feedbacks:locals.feedbacks,feedbackWithoutPopulate,admin}) -%>
+    </section>
+
+    <section id="feedback-modal-btn-container">
+      <%- include('../../partials/admin/_addFeedbackModal.ejs',{employees}) -%>
+    </section>
+
+</main>
+
